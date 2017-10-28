@@ -8,7 +8,7 @@ Virtual directory file system
 CatalogTree 的组织结构如下图（带父节点指针的儿子-兄弟链树）：
 
 
-![](http://github.com/HappyKL/Virtual-directory-file-system/raw/master/a.png)
+![](https://github.com/HappyKL/Virtual-directory-file-system/raw/master/a.png)
 
 
 针对于目录系统，CatalogTree的结点存放的数据内容为字符串，每个结点对应一个目录项，该目录项可以是目录，也可以是文件，如果是目录就可以再存放其他目录或文件，即非叶节点；如果是文件就是叶节点。从根节点到该节点路径所有结点的字符串用‘/‘进行组合就是该目录项的绝对路径，用来唯一的标识该目录，例如：/usr/li/email/student/。
